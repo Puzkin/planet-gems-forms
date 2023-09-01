@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Anime Editing Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Anime Editing Form</h1>
+    <form action="submit.php" method="post">
+      <label for="editingDuration">How long have you been editing for?</label>
+      <select id="editingDuration" name="editingDuration">
+        <option value="0-5">0-5 months</option>
+        <option value=".5-1">.5-1 year</option>
+        <option value="2">2 years or more</option>
+      </select>
+
+      <label for="editingApp">What is your editing app?</label>
+      <select id="editingApp" name="editingApp">
+        <option value="Ae">Ae</option>
+        <option value="pr">pr</option>
+        <option value="am">am</option>
+        <option value="cc">cc</option>
+        <option value="node">node</option>
+        <option value="filmora">filmora</option>
+        <option value="DaVinci">DaVinci</option>
+      </select>
+
+      <label for="bestEdit">Link to your best edit</label>
+      <input type="url" id="bestEdit" name="bestEdit" placeholder="Enter URL" required>
+
+      <label for="goodLuck">Good luck!</label>
+      <p>Do your best!</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
